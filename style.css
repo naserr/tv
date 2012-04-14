@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-image:url(g.png);
+}
+div.container{
+	width:800px;
+	margin:0 auto;
+	
+}
+div.container div.tv{
+	margin:0 auto;
+	background-image:url(img/on.png);
+	background-repeat:no-repeat;
+	margin:0px auto;
+	width:800px;
+	height:600px;
+	overflow:hidden;
+	position:relative;
+}
+div.banner{
+	width:790px;
+	height:600px;
+	overflow:hidden;
+	margin-top:20px;
+	position:relative;
+}
+div.banner div.box{
+	width:3090px;
+	height:290px;
+	position:absolute;
+	left:64px;
+	top:258px;
+	-webkit-transition:all 800ms;
+}
+div.banner div.box > div{
+	width:515px;
+	height:inherit;
+	float:left;					
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+
+/* PICTURES    */
+div.banner div.box > div.one{
+	background-color:hsl(0,35%,35%);
+}
+div.banner div.box > div.two{
+	background-color:hsl(60,35%,35%);
+}
+
+div.banner div.box > div.three{
+	background-color:hsl(120,35%,35%);
+}
+
+div.banner div.box > div.four{
+	background-color:hsl(180,35%,35%);
+}
+
+div.banner div.box > div.five{
+	background-color:hsl(240,35%,35%);
+}
+
+div.banner div.box > div.six{
+	background-color:hsl(120,35%,35%);
+}
+
+
+div.banner div.btn{
+	width:120px;
+	height:100px;
+	margin:72px 0px 0px 566px;;
+	position:absolute;
+}
+div.banner div.btn div.yek{
+	cursor:pointer;
+	background-image:url(img/one.png);
+	background-color:black;
+	width:15px;
+	height:16px;
+	margin:5px 0px 0px 51px;
+	position:absolute;
+	background-repeat:no-repeat;
+}
+div.banner div.btn div.do{
+	cursor:pointer;
+	background-image:url(img/two.png);
+	background-color:black;
+	width:20px;
+	height:20px;
+	margin:17px 0px 0px 94px;
+	position:absolute;
+}
+div.banner div.btn div.se{
+	cursor:pointer;
+	background-image:url(img/three.png);
+	background-color:black;
+	width:20px;
+	height:20px;
+	margin:64px 0px 0px 93px;
+	position:absolute;
+} 
+div.banner div.btn div.char{
+	cursor:pointer;
+	background-image:url(img/four.png);
+	background-color:black;
+	width:20px;
+	height:20px;
+	margin:80px 0px 0px 47px;
+	position:absolute;
+}
+div.banner div.btn div.panj{
+	cursor:pointer;
+	background-image:url(img/five.png);
+	background-color:black;
+	width:20px;
+	height:20px;
+	margin:63px 0px 0px 2px;
+	position:absolute;
+	-webkit-border-radius:5px;
+}
+div.banner div.btn div.shish{
+	cursor:pointer;
+	background-image:url(img/six.png);
+	background-color:black;
+	width:20px;
+	height:20px;
+	margin:18px 0px 0px 0px;
+	position:absolute;
+	-webkit-border-radius:5px;
+}
