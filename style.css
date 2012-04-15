@@ -8,31 +8,24 @@ body{
 	background-image:url(g.png);
 }
 div.container{
-	width:800px;
 	margin:0 auto;
+	width:800px;
+	height:inherit;
 	
 }
-div.container div.tv{
-	background-image:url(img/on1.png);
-	background-repeat:no-repeat;
-	margin:0px auto;
-	width:800px;
-	height:600px;
-	overflow:hidden;
-	position:relative;
-}
 div.banner{
-	width:790px;
+	width:720px;
 	height:600px;
 	overflow:hidden;
 	margin-top:20px;
 	position:relative;
+	
 }
 div.banner div.box{
 	width:3090px;
 	height:290px;
 	position:absolute;
-	left:64px;
+	margin-left:64px;
 	top:258px;
 	-webkit-transition:all 800ms;
 }
@@ -67,13 +60,24 @@ div.banner div.box > div.five{
 div.banner div.box > div.six{
 	background-color:hsl(120,35%,35%);
 }
+/*  TV */
+div.container div.tv{
+	background-image:url(img/on2.png);
+	background-repeat:no-repeat;
+	width:inherit;
+	height:600px;
+	overflow:hidden;
+	position:relative;
+	margin-top:-585px;
+	margin-left:-24px;
+}
 
 
 div.tv ul.btn{
 	list-style:none;
 	width:140px;
 	height:120px;
-	margin:342px 0px 0px 630px;;
+	margin:335px 0px 0px 654px;;
 	position:absolute;
 }
 div.tv ul.btn li.yek{
@@ -140,6 +144,6 @@ div.tv div.rotate{
 	background-image:url(img/btn.png);
 	width:83px;
 	height:69px;
-	margin:364px 0px 0px 644px;
+	margin:355px 0px 0px 667px;
 	background-color:black;
 }

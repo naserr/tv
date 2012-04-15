@@ -1,6 +1,6 @@
 window.onload=function(){
 	
-	var bannerWidth = 790;
+	var bannerWidth = 515;
 	
 	var divBox = document.getElementsByClassName('banner').item(0).getElementsByClassName('box').item(0);
 	
