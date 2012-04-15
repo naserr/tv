@@ -13,8 +13,7 @@ div.container{
 	
 }
 div.container div.tv{
-	margin:0 auto;
-	background-image:url(img/on.png);
+	background-image:url(img/on1.png);
 	background-repeat:no-repeat;
 	margin:0px auto;
 	width:800px;
@@ -70,13 +69,14 @@ div.banner div.box > div.six{
 }
 
 
-div.banner div.btn{
-	width:120px;
-	height:100px;
-	margin:72px 0px 0px 566px;;
+div.tv ul.btn{
+	list-style:none;
+	width:140px;
+	height:120px;
+	margin:342px 0px 0px 630px;;
 	position:absolute;
 }
-div.banner div.btn div.yek{
+div.tv ul.btn li.yek{
 	cursor:pointer;
 	background-image:url(img/one.png);
 	background-color:black;
@@ -86,7 +86,7 @@ div.banner div.btn div.yek{
 	position:absolute;
 	background-repeat:no-repeat;
 }
-div.banner div.btn div.do{
+div.tv ul.btn li.do{
 	cursor:pointer;
 	background-image:url(img/two.png);
 	background-color:black;
@@ -95,7 +95,7 @@ div.banner div.btn div.do{
 	margin:17px 0px 0px 94px;
 	position:absolute;
 }
-div.banner div.btn div.se{
+div.tv ul.btn li.se{
 	cursor:pointer;
 	background-image:url(img/three.png);
 	background-color:black;
@@ -103,27 +103,30 @@ div.banner div.btn div.se{
 	height:20px;
 	margin:64px 0px 0px 93px;
 	position:absolute;
+	left: 4px;
 } 
-div.banner div.btn div.char{
+div.tv ul.btn li.char{
 	cursor:pointer;
 	background-image:url(img/four.png);
 	background-color:black;
 	width:20px;
 	height:20px;
-	margin:80px 0px 0px 47px;
+	margin:95px 0px 0px 47px;
 	position:absolute;
+	top: -2px;
 }
-div.banner div.btn div.panj{
+div.tv ul.btn li.panj{
 	cursor:pointer;
 	background-image:url(img/five.png);
 	background-color:black;
 	width:20px;
 	height:20px;
-	margin:63px 0px 0px 2px;
+	margin-top:63px;
 	position:absolute;
 	-webkit-border-radius:5px;
+	left: -4px;
 }
-div.banner div.btn div.shish{
+div.tv ul.btn li.shish{
 	cursor:pointer;
 	background-image:url(img/six.png);
 	background-color:black;
@@ -132,4 +135,11 @@ div.banner div.btn div.shish{
 	margin:18px 0px 0px 0px;
 	position:absolute;
 	-webkit-border-radius:5px;
+}
+div.tv div.rotate{
+	background-image:url(img/btn.png);
+	width:83px;
+	height:69px;
+	margin:364px 0px 0px 644px;
+	background-color:black;
 }
