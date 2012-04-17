@@ -5,13 +5,13 @@ window.onload=function(){
 	
 	var liBtns=document.getElementsByClassName('tv').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
 	
-	var divRot=document.getElementsByClassName('rotate').item(0);
+	var divRot=document.getElementsByClassName('selector').item(0);
 
 	for(var i=0;i<liBtns.length;i++){
 		(function(i){
 			liBtns.item(i).onclick=function(){
 				divBox.style.left= (-i*bannerWidth) + 'px';
-				divRot.style.webkitTransform = 'rotate(20deg)';
+				divRot.style.webkitTransform = 'selector(20deg)';
 			}
 		})(i);
 	}

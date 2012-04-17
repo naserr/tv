@@ -21,14 +21,14 @@
 	</div>
 		<div class="tv">
 			<ul class="btn">
-                <li class="yek"></li>
-                <li class="do"></li>
-                <li class="se"></li>
-                <li class="char"></li>
-                <li class="panj"></li>
-                <li class="shish"></li>
+                <li class="yek">1</li>
+                <li class="do"2></li>
+                <li class="se">3</li>
+                <li class="char">4</li>
+                <li class="panj">5</li>
+                <li class="shish">6</li>
 			</ul>
-			<div class="rotate"><img src="img/selector.png" width="30" height="40" /></div>
+			<div class="selector"></div>
 			<div class="power"></div>
 			<div class="off"></div>
 			<!-- <div class="txt"> <img src="img/bgtxt.png" width="400" height="40"</div> -->

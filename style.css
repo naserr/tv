@@ -72,86 +72,56 @@ div.container div.tv{
 	margin-top:-785px;
 }
 
+																		/* SELECTOR */
 
+div.tv div.selector{
+}
+														/* Numbers*/
 div.tv ul.btn{
 	list-style:none;
-	width:140px;
-	height:120px;
-	margin:345px 0px 0px 814px;;
+	background-image:url(img/selectors.png);
+	background-repeat:no-repeat;
+	width:127px;
+	height:140px;
+	margin:360px 0px 0px 815px;
 	position:absolute;
+	left: 0px;
+	top: 0px;
+}
+div.tv ul.btn > li{
+	font-family:"Birch Std";
+	font-size:28px;
+	color:white;
+	cursor:pointer;
 }
 div.tv ul.btn li.yek{
-	cursor:pointer;
-	background-image:url(img/one.png);
-	background-color:black;
-	width:15px;
-	height:16px;
 	margin:5px 0px 0px 51px;
-	position:absolute;
-	background-repeat:no-repeat;
 }
 div.tv ul.btn li.do{
-	cursor:pointer;
-	background-image:url(img/two.png);
-	background-color:black;
-	width:20px;
-	height:20px;
 	margin:17px 0px 0px 94px;
-	position:absolute;
 }
 div.tv ul.btn li.se{
-	cursor:pointer;
-	background-image:url(img/three.png);
-	background-color:black;
-	width:20px;
-	height:20px;
 	margin:64px 0px 0px 93px;
-	position:absolute;
-	left: 4px;
 } 
 div.tv ul.btn li.char{
-	cursor:pointer;
-	background-image:url(img/four.png);
-	background-color:black;
-	width:20px;
-	height:20px;
 	margin:95px 0px 0px 47px;
-	position:absolute;
-	top: -2px;
 }
 div.tv ul.btn li.panj{
-	cursor:pointer;
-	background-image:url(img/five.png);
-	background-color:black;
-	width:20px;
-	height:20px;
 	margin-top:63px;
-	position:absolute;
-	-webkit-border-radius:5px;
-	left: -4px;
 }
 div.tv ul.btn li.shish{
-	cursor:pointer;
-	background-image:url(img/six.png);
-	background-color:black;
-	width:20px;
-	height:20px;
 	margin:18px 0px 0px 0px;
-	position:absolute;
-	-webkit-border-radius:5px;
 }
-div.tv div.rotate{
-	background-image:url(img/btn.png);
-	width:83px;
-	height:69px;
-	margin:366px 0px 0px 830px;
-	position:relative;
-}
-div.tv div.rotate img{
-	margin:16px 0px 0px 27px;
-}
+
+
+
+															/* PANNEL BTNS */
 div.pannel{
-	margin-top:100px;
+	width:180px;
+	min-height:60px;
+	margin-top:495px;
+	margin-left:785px;
+	position:absolute;
 }
 div.tv div.pannel div.next{
 	cursor:pointer;
@@ -160,30 +130,34 @@ div.tv div.pannel div.next{
 	background-image:url(img/next.png);
 	background-color:black;
 	background-repeat:no-repeat;
-	margin-left:908px;
-	margin-top:80px;
+	margin-left:120px;
+	margin-top:18px;
 	position:absolute;
 }
 div.tv div.pannel div.next p{
 	margin-top:40px;
+	margin-left:10px;
 	color:gray;
-	font-family:"Comic Sans MS", cursive;
+	font-family:"Birch Std";
+	position:inherit;
 }
 div.tv div.pannel div.back{
 	cursor:pointer;
 	width:54px;
 	height:53px;
-	background-image:url(img/back.png);
+	background-image:url(img/next.png);
 	background-color:black;
 	background-repeat:no-repeat;
-	margin-top:80px;
-	margin-left:855px;
+	margin-left:67px;
+	margin-top:18px;
 	position:absolute;
 }
 div.tv div.pannel div.back p{
 	margin-top:40px;
+	margin-left:10px;
 	color:gray;
-	font-family:"Comic Sans MS", cursive;
+	font-family:"Birch Std";
+	position:inherit;
 }
 
 div.tv div.pannel div.dogme{
@@ -193,25 +167,25 @@ div.tv div.pannel div.dogme{
 	background-image:url(img/power.png);
 	background-color:black;
 	background-repeat:no-repeat;
+	margin-top:20px;
+	margin-left:12px;
 	position:absolute;
-	margin-top:80px;
-	margin-left:795px;
 }
 div.tv div.power{
 	cursor:pointer;
 	background-image:url(img/poff.png);
-	background-color:black;
 	background-repeat:no-repeat;
-	width:100px;
-	height:46px;
-	margin:-160px 0px 0px 820px;
+	width:150px;
+	height:150px;
+	margin:215px 0px 0px 797px;
+	position:inherit;
 }
 div.tv div.off{
 	background-image:url(img/off.png);
 	background-repeat:no-repeat;
 	width:608px;
 	height:425px;
-	margin:-40px 0px 0px 115px;
+	margin:280px 0px 0px 115px;
 	position:absolute;
 }
 /* UNDER PICTURES TXT
