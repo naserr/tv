@@ -11,8 +11,8 @@
 <div class="container">
 	<div class="banner">
     	<div class="box">
-        	<div class="one"></div>
-        	<div class="two"></div>
+			<div class="one"></div>
+			<div class="two"></div>
         	<div class="three"></div>
         	<div class="four"></div>
         	<div class="five"></div>
@@ -28,8 +28,17 @@
                 <li class="panj"></li>
                 <li class="shish"></li>
 			</ul>
-			<div class="rotate"></div>
-		</div>
+			<div class="rotate"><img src="img/selector.png" width="30" height="40" /></div>
+			<div class="power"></div>
+			<div class="off"></div>
+			<!-- <div class="txt"> <img src="img/bgtxt.png" width="400" height="40"</div> -->
+            <div class="pannel">
+                <div class="next"><p>Next</p></div>
+                <div class="back"><p>Back</p></div>
+                <div class="dogme"><p></p></div>
+                
+			</div>
+        </div>
 </div>
 </body>
 </html>
