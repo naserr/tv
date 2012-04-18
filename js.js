@@ -43,7 +43,7 @@ window.onload=function(){
 		divOff.style.display='none';
 	}
 			document.getElementById('play').onclick = function(){
-				setInterval(nextSlide,4000);
+				setInterval(nextSlide,3000);
 		}
 
 }

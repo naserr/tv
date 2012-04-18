@@ -152,6 +152,7 @@ div.tv ul.btn{
 div.tv ul.btn > li:hover{
 	-webkit-opacity:0.2;
 }
+
 div.tv ul.btn > li{
 	font-family:"Birch Std";
 	font-size:28px;
