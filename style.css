@@ -264,6 +264,17 @@ div.tv div.pannel div.back p{
 	margin-left:12px;
 	position:absolute;
 }
+#play:hover{
+	cursor:pointer;
+	width:42px;
+	height:43px;
+	background-image:url(img/poweron.png);
+	background-repeat:no-repeat;
+	margin-top:20px;
+	margin-left:12px;
+	position:absolute;
+}
+
 div.tv div.power{
 	cursor:pointer;
 	background-image:url(img/poff.png);
