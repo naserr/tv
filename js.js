@@ -3,17 +3,22 @@ currentSlide = 0,
 divBox, liBtns, picsLen, go2slide, nextSlide, prvSlide;
 
 window.onload=function(){
-		document.getElementById('loading').style.display='none';
-
-	var divBox = document.getElementsByClassName('banner').item(0).getElementsByClassName('box').item(0);
 	
-	var liBtns=document.getElementsByClassName('tv').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
+	document.getElementById('loading').style.display='none';
 	
+	divBox = document.getElementsByClassName('banner').item(0).getElementsByClassName('box').item(0);
+	
+	liBtns=document.getElementsByClassName('tv').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
+	
+	picsLen = liBtns.length;
+	
+	divBox.style.width = (picsLen*980) + 'px';
+		
 	go2slide = function (n){
 		if(n>=picsLen) n=0;
 		if(n<0) n=picsLen-1;
 		
-		divBox.style.left = -n*bannerWidth + 'px';
+		divBox.style.left = (-n*bannerWidth) + 'px';
 		currentSlide=n;
 	};
 	nextSlide = function (){
@@ -31,7 +36,7 @@ window.onload=function(){
 		})(i);
 	}
 	
-//	setInterval(nextSlide,5000);
+	//setInterval(nextSlide,5000);
 	
 	var divPower= document.getElementsByClassName('power').item(0);
 	var divOff=document.getElementsByClassName('off').item(0);

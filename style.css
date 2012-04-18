@@ -5,9 +5,7 @@
 	padding:0;
 }
 body{
-	
 	background-image:url(img/g.png);
-	overflow:hidden;
 }
 
 #loading{
@@ -76,20 +74,17 @@ body{
 div.container{
 	margin:0 auto;
 	width:1000px;
-	height:inherit;
-	
 }
 div.banner{
 	width:800px;
 	height:600px;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	margin-top:20px;
 	margin-left:50px;
 	position:relative;
 	
 }
 div.banner div.box{
-	width:3600px;
 	height:418px;
 	position:absolute;
 	margin-left:64px;
