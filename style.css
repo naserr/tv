@@ -204,6 +204,17 @@ div.tv div.pannel div.next{
 	margin-top:18px;
 	position:absolute;
 }
+div.tv div.pannel div.next:hover{
+	cursor:pointer;
+	width:42px;
+	height:43px;
+	background-image:url(img/nexthold.png);
+	background-repeat:no-repeat;
+	margin-left:120px;
+	margin-top:18px;
+	position:absolute;
+}
+
 div.tv div.pannel div.next p{
 	margin-top:40px;
 	margin-left:10px;
@@ -221,6 +232,17 @@ div.tv div.pannel div.back{
 	margin-top:18px;
 	position:absolute;
 }
+div.tv div.pannel div.back:hover{
+	cursor:pointer;
+	width:42px;
+	height:43px;
+	background-image:url(img/backhold.png);
+	background-repeat:no-repeat;
+	margin-left:67px;
+	margin-top:18px;
+	position:absolute;
+}
+
 div.tv div.pannel div.back p{
 	margin-top:40px;
 	margin-left:10px;
