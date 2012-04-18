@@ -78,7 +78,7 @@ div.container{
 div.banner{
 	width:800px;
 	height:600px;
-	/*overflow:hidden;*/
+	overflow:hidden;
 	margin-top:20px;
 	margin-left:50px;
 	position:relative;
