@@ -8,12 +8,14 @@
 </head>
 
 <body>
+
 	<div id="loading">
 			<div class="circle"></div>
 			<div class="circle1"></div>
 	</div>
 
 <div class="container">
+    <div class="under"></div>
 	<div class="banner">
     	<div class="box">
 				<?php
@@ -40,7 +42,12 @@
                 <li class="panj">5</li>
                 <li class="shish">6</li>
                 <li class="haft">7</li>
-			</ul>
+					<?php
+						for ($i=0;$i<$counter;$i++) {
+							echo "<li></li>";
+						}
+					?>
+            </ul>
 			<div class="selector"></div>
 			<div class="power"></div>
 			<div class="off"></div>
@@ -52,6 +59,7 @@
                 
 			</div>
         </div>
+        <div class="tvtable"></div>
 </div>
 </body>
 </html>

@@ -4,9 +4,11 @@
 	margin:0;
 	padding:0;
 }
+
 body{
 	background-image:url(img/g.png);
 }
+
 
 #loading{
 	display:block;
@@ -74,7 +76,17 @@ body{
 div.container{
 	margin:0 auto;
 	width:1000px;
+	
 }
+div.under{
+	background-image:url(img/barfak.png);
+	background-repeat:no-repeat;
+	width:608px;
+	height:425px;
+	position:absolute;
+	margin:100px 0px 0px 110px;;
+}
+
 div.banner{
 	width:800px;
 	height:600px;
@@ -82,6 +94,7 @@ div.banner{
 	margin-top:20px;
 	margin-left:50px;
 	position:relative;
+
 	
 }
 div.banner div.box{
@@ -99,7 +112,7 @@ div.banner div.box > div{
 	background-position:left top;
 }
 
-/* PICTURES    */
+																							/* PICTURES    */
 div.banner div.box > div.one{
 	background-image:url(img/banner/one.JPG);
 }
@@ -292,9 +305,15 @@ div.tv div.off{
 	height:425px;
 	margin:280px 0px 0px 115px;
 	position:absolute;
+
 }
 /* UNDER PICTURES TXT
 div.tv div.txt{
 	margin:300px 0px 0px 220px;
 }
 */
+div.tvtable{
+	background-image:url(img/table.png);
+	width:1000px;
+	height:300px;
+}
