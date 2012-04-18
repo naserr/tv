@@ -78,7 +78,7 @@ div.container{
 div.banner{
 	width:800px;
 	height:600px;
-	/*overflow:hidden;*/
+	overflow:hidden;
 	margin-top:20px;
 	margin-left:50px;
 	position:relative;
@@ -229,7 +229,7 @@ div.tv div.pannel div.back p{
 	font-family:"Birch Std";
 }
 
-div.tv div.pannel div.dogme{
+#play{
 	cursor:pointer;
 	width:42px;
 	height:43px;
