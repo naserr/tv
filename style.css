@@ -5,8 +5,74 @@
 	padding:0;
 }
 body{
+	
 	background-image:url(img/g.png);
+	overflow:hidden;
 }
+
+#loading{
+	display:block;
+	background-image:url(img/g.png);
+	width:100%;
+	height:200%;
+	top:0;
+	position:absolute;
+	z-index:5;
+}
+
+/* Circle */
+.circle {
+	margin-top:25% ;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: rgba(0,0,0,0);
+	border:5px solid rgba(0,183,229,0.9);
+	opacity:.9;
+	border-right:5px solid rgba(0,0,0,0);
+	border-left:5px solid rgba(0,0,0,0);
+	border-radius:50px;
+	box-shadow: 0 0 35px #2187e7;
+	width:50px;
+	height:50px;
+	-moz-animation:spinPulse 1s infinite ease-in-out;
+	-webkit-animation:spinPulse 1s infinite linear;
+}
+.circle1 {
+	background-color: rgba(0,0,0,0);
+	border:5px solid rgba(0,183,229,0.9);
+	opacity:.9;
+	border-left:5px solid rgba(0,0,0,0);
+	border-right:5px solid rgba(0,0,0,0);
+	border-radius:50px;
+	box-shadow: 0 0 15px #2187e7; 
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	position:relative;
+	top:-50px;
+	-moz-animation:spinoffPulse 1s infinite linear;
+	-webkit-animation:spinoffPulse 1s infinite linear;
+}
+@-moz-keyframes spinPulse {
+	0% { -moz-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #2187e7;}
+	50% { -moz-transform:rotate(145deg); opacity:1; }
+	100% { -moz-transform:rotate(-320deg); opacity:0; }
+}
+@-moz-keyframes spinoffPulse {
+	0% { -moz-transform:rotate(0deg); }
+	100% { -moz-transform:rotate(360deg);  }
+}
+@-webkit-keyframes spinPulse {
+	0% { -webkit-transform:rotate(160deg); opacity:0; box-shadow:0 0 1px #2187e7; }
+	50% { -webkit-transform:rotate(145deg); opacity:1;}
+	100% { -webkit-transform:rotate(-320deg); opacity:0; }
+}
+@-webkit-keyframes spinoffPulse {
+	0% { -webkit-transform:rotate(0deg); }
+	100% { -webkit-transform:rotate(360deg); }
+}
+
+																																		/* */
 div.container{
 	margin:0 auto;
 	width:1000px;
@@ -95,23 +161,34 @@ div.tv ul.btn > li{
 	cursor:pointer;
 }
 div.tv ul.btn li.yek{
-	margin:5px 0px 0px 51px;
+	margin:22px 0px 0px 59px;
+	position:absolute;
 }
 div.tv ul.btn li.do{
-	margin:17px 0px 0px 94px;
+	margin:35px 0px 0px 86px;
+	position:absolute;
 }
 div.tv ul.btn li.se{
-	margin:64px 0px 0px 93px;
+	position:absolute;
+	margin:70px 0px 0px 94px;
 } 
 div.tv ul.btn li.char{
-	margin:95px 0px 0px 47px;
+	position:absolute;
+	margin:93px 0px 0px 70px;
 }
 div.tv ul.btn li.panj{
-	margin-top:63px;
+	position:absolute;
+	margin:93px 0px 0px 42px;
 }
 div.tv ul.btn li.shish{
-	margin:18px 0px 0px 0px;
+	position:absolute;
+	margin:70px 0px 0px 21px;
 }
+div.tv ul.btn li.haft{
+	position:absolute;
+	margin:37px 0px 0px 29px;
+}
+
 
 
 
@@ -121,14 +198,12 @@ div.pannel{
 	min-height:60px;
 	margin-top:495px;
 	margin-left:785px;
-	position:absolute;
 }
 div.tv div.pannel div.next{
 	cursor:pointer;
-	width:54px;
-	height:53px;
+	width:42px;
+	height:43px;
 	background-image:url(img/next.png);
-	background-color:black;
 	background-repeat:no-repeat;
 	margin-left:120px;
 	margin-top:18px;
@@ -139,14 +214,13 @@ div.tv div.pannel div.next p{
 	margin-left:10px;
 	color:gray;
 	font-family:"Birch Std";
-	position:inherit;
+	font-size:22px;
 }
 div.tv div.pannel div.back{
 	cursor:pointer;
-	width:54px;
-	height:53px;
+	width:42px;
+	height:43px;
 	background-image:url(img/next.png);
-	background-color:black;
 	background-repeat:no-repeat;
 	margin-left:67px;
 	margin-top:18px;
@@ -156,16 +230,15 @@ div.tv div.pannel div.back p{
 	margin-top:40px;
 	margin-left:10px;
 	color:gray;
+	font-size:22px;
 	font-family:"Birch Std";
-	position:inherit;
 }
 
 div.tv div.pannel div.dogme{
 	cursor:pointer;
-	width:54px;
-	height:53px;
+	width:42px;
+	height:43px;
 	background-image:url(img/power.png);
-	background-color:black;
 	background-repeat:no-repeat;
 	margin-top:20px;
 	margin-left:12px;
