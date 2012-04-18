@@ -36,13 +36,14 @@ window.onload=function(){
 		})(i);
 	}
 	
-	//setInterval(nextSlide,5000);
-	
 	var divPower= document.getElementsByClassName('power').item(0);
 	var divOff=document.getElementsByClassName('off').item(0);
 	divPower.onclick = function(){
 		divPower.style.backgroundImage='url(img/pon.png)';
 		divOff.style.display='none';
 	}
-	
+			document.getElementById('play').onclick = function(){
+				setInterval(nextSlide,4000);
+		}
+
 }

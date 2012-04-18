@@ -46,9 +46,9 @@
 			<div class="off"></div>
 			<!-- <div class="txt"> <img src="img/bgtxt.png" width="400" height="40"</div> -->
             <div class="pannel">
-                <div class="next"><p ></p></div>
-                <div class="back"><p></p></div>
-                <div class="dogme"><p></p></div>
+                <div class="next" title="Next" onclick="nextSlide()"><p ></p></div>
+                <div class="back" title="Back" onclick="prvSlide()"><p></p></div>
+                <div id="play" title="Play"><p></p></div>
                 
 			</div>
         </div>
