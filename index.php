@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
 	<div id="loading">
 			<div class="circle"></div>
 			<div class="circle1"></div>
@@ -48,13 +47,17 @@
 						}
 					?>
             </ul>
+			<div class="glass"></div>
 			<div class="selector"></div>
-			<div class="power"></div>
-			<div class="off"></div>
+			<div class="mainpower">
+            	<a class="off" href="#">Off</a>
+            	<a class="on" href="#">On</a>
+                <div class="pointer"></div>
+			</div>
 			<!-- <div class="txt"> <img src="img/bgtxt.png" width="400" height="40"</div> -->
             <div class="pannel">
-                <div class="next" title="Next" onclick="nextSlide()"><p ></p></div>
-                <div class="back" title="Back" onclick="prvSlide()"><p></p></div>
+				<div class="next" title="Next/Puse" onclick="nextSlide()"><a id="next"></a></div>
+                <div class="back" title="Back/Puse" onclick="prvSlide()"><a id="back"></a></div>
                 <div id="play" title="Play"><p></p></div>
                 
 			</div>

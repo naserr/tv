@@ -138,7 +138,7 @@ div.banner div.box > div.six{
 
 /*  TV */
 div.container div.tv{
-	background-image:url(img/tvon.png);
+	background-image:url(img/tv_turnon.png);
 	background-repeat:no-repeat;
 	width:inherit;
 	height:900px;
@@ -157,12 +157,13 @@ div.tv ul.btn{
 	background-repeat:no-repeat;
 	width:127px;
 	height:140px;
-	margin:360px 0px 0px 815px;
+	margin:360px 0px 0px 808px;
 	position:absolute;
 	left: 0px;
 	top: 0px;
 }
 div.tv ul.btn > li:hover{
+	opacity:0.2;
 	-webkit-opacity:0.2;
 }
 
@@ -204,116 +205,144 @@ div.tv ul.btn li.haft{
 
 
 
-															/* PANNEL BTNS */
+																			/* PANNEL BTNS */
 div.pannel{
 	width:180px;
 	min-height:60px;
 	margin-top:495px;
 	margin-left:785px;
 }
-div.tv div.pannel div.next{
-	cursor:pointer;
-	width:42px;
-	height:43px;
-	background-image:url(img/next.png);
+div.tv div.pannel #next{
+	background-image:url(img/asab.png);
 	background-repeat:no-repeat;
+    float: left;
+    height: 43px;
+    padding-right: 40px;
+    text-decoration: none;
 	margin-left:120px;
 	margin-top:18px;
 	position:absolute;
+	cursor:pointer;
 }
-div.tv div.pannel div.next:hover{
-	cursor:pointer;
-	width:42px;
-	height:43px;
-	background-image:url(img/nexthold.png);
-	background-repeat:no-repeat;
-	margin-left:120px;
-	margin-top:18px;
-	position:absolute;
+div.pannel #next:active{
+	background-image:url(pannel_btn.png);
+    background-position:bottom right;
 }
 
-div.tv div.pannel div.next p{
+div.tv div.pannel #next p{
 	margin-top:40px;
 	margin-left:10px;
 	color:gray;
 	font-family:"Birch Std";
 	font-size:22px;
 }
-div.tv div.pannel div.back{
-	cursor:pointer;
-	width:42px;
-	height:43px;
-	background-image:url(img/next.png);
+div.tv div.pannel #back{
+	background-image:url(img/asab.png);
 	background-repeat:no-repeat;
+    float: left;
+    height: 43px;
+    padding-right: 40px;
+    text-decoration: none;
 	margin-left:67px;
 	margin-top:18px;
 	position:absolute;
-}
-div.tv div.pannel div.back:hover{
 	cursor:pointer;
-	width:42px;
-	height:43px;
-	background-image:url(img/backhold.png);
-	background-repeat:no-repeat;
-	margin-left:67px;
-	margin-top:18px;
-	position:absolute;
 }
-
-div.tv div.pannel div.back p{
+div.pannel #back:active{
+	background-image:url(pannel_btn.png);
+    background-position:bottom right;
+}
+div.tv div.pannel #back p{
 	margin-top:40px;
 	margin-left:10px;
 	color:gray;
 	font-size:22px;
 	font-family:"Birch Std";
 }
-
-#play{
-	cursor:pointer;
-	width:42px;
-	height:43px;
-	background-image:url(img/power.png);
+div.tv div.pannel #play{
+	background-image:url(img/play.png);
 	background-repeat:no-repeat;
-	margin-top:20px;
+    float: left;
+    height: 43px;
+    padding-right: 41px;
+    text-decoration: none;
+	margin-top:18px;
 	margin-left:12px;
 	position:absolute;
-}
-#play:hover{
 	cursor:pointer;
-	width:42px;
-	height:43px;
-	background-image:url(img/poweron.png);
-	background-repeat:no-repeat;
-	margin-top:20px;
-	margin-left:12px;
-	position:absolute;
 }
-
-div.tv div.power{
-	cursor:pointer;
-	background-image:url(img/poff.png);
+div.pannel #play:active{
+	background-image:url(pannel_btn.png);
+    background-position:bottom right;
+}
+																					/*    POWER BTN OOF/ON   */
+div.tv div.mainpower{
+	background-image:url(img/mainpower.png);
 	background-repeat:no-repeat;
 	width:150px;
 	height:150px;
-	margin:215px 0px 0px 797px;
+	margin:210px 0px 0px 797px;
 	position:inherit;
 }
-div.tv div.off{
-	background-image:url(img/off.png);
+div.mainpower a.off{
+	font-family:"Birch Std";
+	color:rgb(150,10,10);
+	font-size:20px;
+	position:inherit;
+	margin:42px 0px 0px 72px;
+	text-decoration:none;
+}
+div.mainpower a.off:hover{
+	color:rgb(250,10,10);
+	font-size:20px;
+	position:inherit;
+	margin:42px 0px 0px 72px;
+	text-decoration:none;
+}
+
+div.mainpower a.on{
+	font-family:"Birch Std";
+	cursor:pointer;
+	color:rgb(10,150,10);
+	font-size:20px;
+	position:inherit;
+	margin:65px 0px 0px 98px;
+	text-decoration:none;
+}
+div.mainpower a.on:hover{
+	cursor:pointer;
+	color:rgb(10,250,10);
+	font-size:20px;
+	position:inherit;
+	margin:65px 0px 0px 98px;
+	text-decoration:none;
+}
+
+
+div.tv div.mainpower div.pointer{
+	background-image:url(img/pointer.png);
+	background-repeat:no-repeat;
+	width:17px;
+	height:108px;
+	position:absolute;
+	margin:27px 0px 0px 67px;
+}																							/* GLASSSSSSSSS*/
+div.tv div.glass{
+	background-image:url(img/glass.png);
 	background-repeat:no-repeat;
 	width:608px;
 	height:425px;
 	margin:280px 0px 0px 115px;
 	position:absolute;
-
 }
+
 /* UNDER PICTURES TXT
 div.tv div.txt{
 	margin:300px 0px 0px 220px;
 }
 */
 div.tvtable{
-	background-image:url(img/table.png);
-	width:1000px;
+	background-image:url(img/oldtable.png);
+	width:1100px;
 	height:300px;
 }
