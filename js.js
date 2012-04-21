@@ -19,8 +19,6 @@ window.onload=function(){
 	go2slide = function (n){
 		if(n>=picsLen) n=0;
 		if(n<0) n=picsLen-1;
-				hand.style.webkitTransform = 'rotate(45deg)';		//chrome
-				hand.style.MozTransform ='rotate(45deg)';		//Firefox
 		
 		divBox.style.left = (-n*bannerWidth) + 'px';
 		currentSlide=n;
@@ -81,5 +79,7 @@ window.onload=function(){
 	}
 	
 	
-			
+		//hand.style.webkitTransform = 'rotate(45deg)';		//chrome
+		//hand.style.MozTransform ='rotate(45deg)';		//Firefox
+
 }
