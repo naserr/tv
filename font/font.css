@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'BirchRegular';
+    src: url('ufonts.com_birch1-webfont.eot');
+    src: url('ufonts.com_birch1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ufonts.com_birch1-webfont.woff') format('woff'),
+         url('ufonts.com_birch1-webfont.ttf') format('truetype'),
+         url('ufonts.com_birch1-webfont.svg#BirchRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

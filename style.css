@@ -6,13 +6,13 @@
 }
 
 body{
-	background-image:url(img/g.png);
+	background-image:url(img/wall3.jpg);
 }
 
 
 #loading{
 	display:block;
-	background-image:url(img/g.png);
+	background-image:url(img/wall3.jpg);
 	width:100%;
 	height:200%;
 	top:0;
@@ -20,7 +20,7 @@ body{
 	z-index:5;
 }
 
-/* Circle */
+																		/* Circle-Loading */
 .circle {
 	margin-top:25% ;
 	margin-left:auto;
@@ -72,7 +72,7 @@ body{
 	100% { -webkit-transform:rotate(360deg); }
 }
 
-																																		/* */
+																		/* */
 div.container{
 	margin:0 auto;
 	width:1000px;
@@ -113,7 +113,7 @@ div.banner div.box > div{
 	background-position:left top;
 }
 
-																							/* PICTURES    */
+																		/* PICTURES    */
 div.banner div.box > div.one{
 	background-image:url(img/banner/one.JPG);
 }
@@ -160,7 +160,7 @@ div.tv div.hand{
 	-moz-transition:all 800ms;
 	
 }
-														/* Numbers*/
+																		/* Numbers*/
 div.tv ul.btn{
 	list-style:none;
 	width:130px;
@@ -217,9 +217,7 @@ div.tv ul.btn li.hasht{
 }
 
 
-
-
-																			/* PANNEL BTNS */
+																	/* PANNEL BTNS */
 div.pannel{
 	width:180px;
 	min-height:60px;
@@ -295,7 +293,7 @@ div.pannel #play:active{
 	background-image:url(pannel_btn.png);
     background-position:bottom right;
 }
-																					/*    POWER BTN OOF/ON   */
+																		/*    POWER BTN OOF/ON   */
 div.tv div.mainpower{
 	background-image:url(img/mainpower.png);
 	background-repeat:no-repeat;
@@ -305,6 +303,7 @@ div.tv div.mainpower{
 	position:inherit;
 }
 div.mainpower a.off{
+	cursor:pointer;
 	font-family:"Birch Std";
 	color:rgb(150,10,10);
 	font-size:20px;
@@ -313,6 +312,7 @@ div.mainpower a.off{
 	text-decoration:none;
 }
 div.mainpower a.off:hover{
+	cursor:pointer;
 	color:rgb(250,10,10);
 	font-size:20px;
 	position:inherit;
@@ -348,7 +348,8 @@ div.tv div.mainpower div.pointer{
 	margin:27px 0px 0px 67px;
 	-webkit-transition:all 800ms;
 	-moz-transition:all 800ms;
-}																							/* GLASS*/
+}
+																		/* GLASS*/
 div.tv div.glass{
 	background-image:url(img/glass.png);
 	background-repeat:no-repeat;
@@ -358,16 +359,6 @@ div.tv div.glass{
 	position:absolute;
 }
 
-/*
-div.tv div.pass{
-	background-image:url(img/bgtxt.png);
-	background-repeat:no-repeat;
-	margin:633px 0px 0px 176px;
-	width:510px;
-	height:60px;
-	position:;
-}
-*/
 div.tvtable{
 	background-image:url(img/oldtable.png);
 	width:1100px;
@@ -385,7 +376,8 @@ div.box div.otext{
 	color:lightblue;
 	font-family:"Comic Sans MS", cursive;
 	font-size:14px;
-	opacity:0.6;
-	-webkit-opacity:0.6;
+	font-weight:bold;
+	opacity:0.8;
+	-webkit-opacity:0.8;
 	
 }

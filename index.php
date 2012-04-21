@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>TV Banner</title>
 <link type="text/css" rel="stylesheet" href="style.css" />
+<link type="text/css" rel="stylesheet" href="font/font.css" />
 <script type="text/javascript" src="js.js" ></script>
 </head>
 
@@ -56,17 +57,15 @@
                 <li class="shish">6</li>
                 <li class="haft">7</li>
                 <li class="hasht">8</li>
-					<?php
-						for ($i=0;$i<$counter;$i++) {
-							echo "<li></li>";
-						}
-					?>
+        	<?php
+				for($i=0;$i<$pics_len;$i++) echo '<li></li>';
+			?>
             </ul>
 			<div class="glass"></div>
 			<div class="selector"></div>
 			<div class="mainpower">
-            	<a class="off" href="#">Off</a>
-            	<a class="on" href="#">On</a>
+            	<a class="off">Off</a>
+            	<a class="on">On</a>
                 <div class="pointer"></div>
 			</div>
 				 <!-- <div class="pass"></div> -->
