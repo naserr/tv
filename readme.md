@@ -1,2 +1,2 @@
-#It was very simple at first But by my new new idea and coding this project going to be a top project! :D
+#It was very simple at first But by my new new idea and coding this project going to be a Top project...
 ##Help me with your new idea...thank you!
