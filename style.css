@@ -103,6 +103,7 @@ div.banner div.box{
 	margin-left:64px;
 	top:99px;
 	-webkit-transition:all 800ms;
+	-moz-transition:all 800ms;
 }
 div.banner div.box > div{
 	width:600px;
@@ -146,21 +147,30 @@ div.container div.tv{
 	margin-top:-785px;
 }
 
-																		/* SELECTOR */
+																		/* HAND */
 
-div.tv div.selector{
+div.tv div.hand{
+	background-image:url(img/handok.png);
+	background-repeat:no-repeat;
+	margin:370px 0px 0px 808px;
+	width:130px;
+	height:130px;
+	position:absolute;
+	-webkit-transition:all 800ms;
+	-moz-transition:all 800ms;
+	
 }
 														/* Numbers*/
 div.tv ul.btn{
 	list-style:none;
-	background-image:url(img/selectors.png);
-	background-repeat:no-repeat;
-	width:127px;
-	height:140px;
-	margin:360px 0px 0px 808px;
+	width:130px;
+	height:130px;
+	margin:370px 0px 0px 808px;
 	position:absolute;
 	left: 0px;
 	top: 0px;
+	opacity:0.5;
+	-webkit-opacity:0.5;
 }
 div.tv ul.btn > li:hover{
 	opacity:0.2;
@@ -174,32 +184,36 @@ div.tv ul.btn > li{
 	cursor:pointer;
 }
 div.tv ul.btn li.yek{
-	margin:22px 0px 0px 59px;
+	margin:10px 0px 0px 59px;
 	position:absolute;
 }
 div.tv ul.btn li.do{
-	margin:35px 0px 0px 86px;
+	margin:20px 0px 0px 89px;
 	position:absolute;
 }
 div.tv ul.btn li.se{
 	position:absolute;
-	margin:70px 0px 0px 94px;
+	margin:50px 0px 0px 100px;
 } 
 div.tv ul.btn li.char{
 	position:absolute;
-	margin:93px 0px 0px 70px;
+	margin:77px 0px 0px 87px;
 }
 div.tv ul.btn li.panj{
 	position:absolute;
-	margin:93px 0px 0px 42px;
+	margin:87px 0px 0px 59px;
 }
 div.tv ul.btn li.shish{
 	position:absolute;
-	margin:70px 0px 0px 21px;
+	margin:77px 0px 0px 28px;
 }
 div.tv ul.btn li.haft{
 	position:absolute;
-	margin:37px 0px 0px 29px;
+	margin:50px 0px 0px 17px;
+}
+div.tv ul.btn li.hasht{
+	position:absolute;
+	margin:20px 0px 0px 29px;
 }
 
 
@@ -229,12 +243,15 @@ div.pannel #next:active{
     background-position:bottom right;
 }
 
-div.tv div.pannel #next p{
-	margin-top:40px;
-	margin-left:10px;
+div.tv div.pannel div.next p{
+	opacity:0.4;
+	-webkit-opacity:0.4;
+	margin-top:60px;
+	margin-left:112px;
 	color:gray;
 	font-family:"Birch Std";
 	font-size:22px;
+	position:absolute;
 }
 div.tv div.pannel #back{
 	background-image:url(img/asab.png);
@@ -252,12 +269,15 @@ div.pannel #back:active{
 	background-image:url(pannel_btn.png);
     background-position:bottom right;
 }
-div.tv div.pannel #back p{
-	margin-top:40px;
-	margin-left:10px;
+div.tv div.pannel div.back p{
+	opacity:0.4;
+	-webkit-opacity:0.4;
+	margin-top:60px;
+	margin-left:40px;
 	color:gray;
 	font-size:22px;
 	font-family:"Birch Std";
+	position:absolute;
 }
 div.tv div.pannel #play{
 	background-image:url(img/play.png);
@@ -326,7 +346,9 @@ div.tv div.mainpower div.pointer{
 	height:108px;
 	position:absolute;
 	margin:27px 0px 0px 67px;
-}																							/* GLASSSSSSSSS*/
+	-webkit-transition:all 800ms;
+	-moz-transition:all 800ms;
+}																							/* GLASS*/
 div.tv div.glass{
 	background-image:url(img/glass.png);
 	background-repeat:no-repeat;
@@ -336,13 +358,34 @@ div.tv div.glass{
 	position:absolute;
 }
 
-/* UNDER PICTURES TXT
-div.tv div.txt{
-	margin:300px 0px 0px 220px;
+/*
+div.tv div.pass{
+	background-image:url(img/bgtxt.png);
+	background-repeat:no-repeat;
+	margin:633px 0px 0px 176px;
+	width:510px;
+	height:60px;
+	position:;
 }
 */
 div.tvtable{
 	background-image:url(img/oldtable.png);
 	width:1100px;
 	height:300px;
+}
+div.box div.otext{
+	background-image:url(img/bgtxt.png);
+	background-repeat:no-repeat;
+	width:400px;
+	height:68px;
+	position:absolute;
+	margin:7px 0px 0px 109px;
+	padding:10px 0px 0px 0px;
+	text-align:center;
+	color:lightblue;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	opacity:0.6;
+	-webkit-opacity:0.6;
+	
 }

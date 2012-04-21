@@ -9,7 +9,9 @@ window.onload=function(){
 	divBox = document.getElementsByClassName('banner').item(0).getElementsByClassName('box').item(0);
 	
 	liBtns=document.getElementsByClassName('tv').item(0).getElementsByClassName('btn').item(0).getElementsByTagName('li');
-	
+
+	var hand = document.getElementsByClassName('hand').item(0);
+
 	picsLen = liBtns.length;
 	
 	divBox.style.width = (picsLen*980) + 'px';
@@ -17,12 +19,14 @@ window.onload=function(){
 	go2slide = function (n){
 		if(n>=picsLen) n=0;
 		if(n<0) n=picsLen-1;
+				hand.style.webkitTransform = 'rotate(45deg)';		//chrome
+				hand.style.MozTransform ='rotate(45deg)';		//Firefox
 		
 		divBox.style.left = (-n*bannerWidth) + 'px';
 		currentSlide=n;
 	};
-	nextSlide = function (){
-		go2slide(currentSlide+1)
+		nextSlide = function (){
+			go2slide(currentSlide+1);
 	};
 	prvSlide = function (){
 		go2slide(currentSlide-1)
@@ -33,8 +37,10 @@ window.onload=function(){
 			liBtns.item(j).onclick=function(){
 				go2slide(j);
 			}
+
 		})(i);
 	}
+	
 	
 	var on= document.getElementsByClassName('on').item(0);
 	var divGlass=document.getElementsByClassName('glass').item(0);
@@ -58,26 +64,22 @@ window.onload=function(){
 		divGlass.style.display='block';
 	}
 
-		
-		// start
-		document.getElementById('play').onclick = function(){
-				var t = setInterval(nextSlide, 4000);
-		}
-			// Pausing
-	document.getElementById('next').onclick = function(){
-				clearInterval(t);
-			t = 0;
+																												/*  PALY SLIDESHOW  */	
+				// Pausing
+		document.getElementById('next').onclick = function (){
+			
+			clearInterval(t);
 	}
-	
-			// Resuming
+				// Pausing
+		document.getElementById('back').onclick = function(){
+				clearInterval(t);
+	}
+
+			// Play
 	document.getElementById('play').onclick = function(){			
 	t = setInterval(nextSlide, 4000);
 	}
-			// Pausing
-		document.getElementById('back').onclick = function(){
-				clearInterval(t);
-			t = 0;
-	}
-
-
+	
+	
+			
 }

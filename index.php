@@ -18,21 +18,35 @@
 	<div class="banner">
     	<div class="box">
 				<?php
-				$counter = 0;
-					$dir = './img/banner';
-					$sup_type = array('jpg','png','jpeg','gif'); 
+			
+				$dir = './img/banner';
+				$allowed_type = array('jpg','jpeg','png','gif');
+				
+				
+				$d = dir($dir);
+				$pics_len=0;
+				while( $f = $d->read() ){
+					$file_type = end(explode('.',$f));
+					if( !in_array(strtolower($file_type),$allowed_type) ) continue;
 
-					$d = dir($dir);
-					while( $f=$d->read() ){
-						$f_type = end (explode('.',$f) );
-						 if( !in_array(strtolower($f_type),$sup_type) ) continue;
-						echo "<div><img src='./img/banner/$f' /></div>";
-						$counter ++;
+					$file_name = substr($f,0,-strlen($file_type)-1);
+					$otext_path = "$dir/$file_name.txt";
+
+					if( file_exists($otext_path) ){
+						$otext_text = file_get_contents($otext_path);
+					}else{
+						$otext_text = "";
 					}
+
+					echo "<div><div class='otext'>$otext_text</div><img src='$dir/$f' /></div>";
+					$pics_len ++;
+				}
+		
 				?>
 		</div>
 	</div>
 		<div class="tv">
+            <div class="hand"></div>
 			<ul class="btn">
                 <li class="yek">1</li>
                 <li class="do">2</li>
@@ -41,6 +55,7 @@
                 <li class="panj">5</li>
                 <li class="shish">6</li>
                 <li class="haft">7</li>
+                <li class="hasht">8</li>
 					<?php
 						for ($i=0;$i<$counter;$i++) {
 							echo "<li></li>";
@@ -54,10 +69,10 @@
             	<a class="on" href="#">On</a>
                 <div class="pointer"></div>
 			</div>
-			<!-- <div class="txt"> <img src="img/bgtxt.png" width="400" height="40"</div> -->
+				 <!-- <div class="pass"></div> -->
             <div class="pannel">
-				<div class="next" title="Next/Puse" onclick="nextSlide()"><a id="next"></a></div>
-                <div class="back" title="Back/Puse" onclick="prvSlide()"><a id="back"></a></div>
+				<div class="next"  onclick="nextSlide()"><p>Next/Pause</p><a id="next"></a></div>
+                <div class="back"  onclick="prvSlide()"><p>Back/Pause</p><a id="back"></a></div>
                 <div id="play" title="Play"><p></p></div>
                 
 			</div>
