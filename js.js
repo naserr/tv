@@ -29,19 +29,39 @@ window.onload=function(){
 	};
 
 	for(var i=0;i<picsLen;i++){
-		(function(j){
-			var hand = document.getElementsByClassName('hand').item(0);;
-			deg=45;
-			liBtns.item(j).onclick=function(){
-				go2slide(j);
-				hand.style.webkitTransform = 'rotate('+deg+'deg)';		//chrome
-				hand.style.MozTransform ='rotate('+deg+'deg)';
-				deg +=45;
+	(function(j){
+		var hand = document.getElementsByClassName('hand').item(0);
+		liBtns.item(j).onclick=function(){
+			switch(j)
+			{
+			case 1:
+			deg=45 ;
+			break;
+			case 2:
+			deg=90;
+			break;
+			case 3:
+			deg=135 ;
+			break;
+			case 5:
+			deg=135+45;
+			break;
+			case 6:
+			deg=135+90 ;
+			break;
+			case 7:
+			deg=135+135;
+			break;
+			default:
+			deg=135+135+45;
 			}
-		})(i);
-	}
-			
-	
+			go2slide(j);
+			hand.style.webkitTransform = 'rotate('+deg+'deg)'; //chrome
+			hand.style.MozTransform ='rotate('+deg+'deg)'; //Firefox
+			}
+			})(i);
+	}			
+		
 	var on= document.getElementsByClassName('on').item(0);
 	var divGlass=document.getElementsByClassName('glass').item(0);
 	var divPointer=document.getElementsByClassName('pointer').item(0);
