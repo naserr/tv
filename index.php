@@ -76,7 +76,11 @@
                 
 			</div>
         </div>
-        <div class="tvtable"></div>
+        <div class="tvtable">
+            <div class="footer">
+            <p>Created by <a href="http://www.naserr.ir">Naser Rahmani  </a><img class="b" src="img/anti-copyright.png" width="70" height="70" /></p>
+            </div>
+        </div>
 </div>
 </body>
 </html>

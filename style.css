@@ -358,12 +358,6 @@ div.tv div.glass{
 	margin:280px 0px 0px 115px;
 	position:absolute;
 }
-
-div.tvtable{
-	background-image:url(img/oldtable.png);
-	width:1100px;
-	height:300px;
-}
 div.box div.otext{
 	background-image:url(img/bgtxt.png);
 	background-repeat:no-repeat;
@@ -379,5 +373,39 @@ div.box div.otext{
 	font-weight:bold;
 	opacity:0.8;
 	-webkit-opacity:0.8;
-	
+}
+div.tvtable{
+	background-image:url(img/oldtable.png);
+	background-repeat:no-repeat;
+	width:1100px;
+	min-height:300px;
+}
+div.footer{
+	font:"Birch Std";
+	position:absolute;
+	width:400px;
+	margin:220px 0px 0px 400px;
+	font-size:14px;
+
+}
+div.footer img.b{
+	margin-top:-30px;
+	position:absolute;
+	opacity:0.3;
+	-webkit-opacity:0.3;
+}
+
+div.footer p{
+	font:"Birch Std";
+	font-size:16px;
+	text-decoration:none;
+	font-style:italic;
+
+}
+div.footer a{
+	font:"Birch Std";
+	font-size:16px;
+	text-decoration:none;
+	color:#000033;
+	font-style:italic;
 }
