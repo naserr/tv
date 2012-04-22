@@ -15,11 +15,16 @@ window.onload=function(){
 	divBox.style.width = (picsLen*980) + 'px';
 		
 	go2slide = function (n){
+		var hand = document.getElementsByClassName('hand').item(0);
 		if(n>=picsLen) n=0;
 		if(n<0) n=picsLen-1;
+		deg =n*45;
+				hand.style.webkitTransform = 'rotate('+deg+'deg)';		//chrome
+				hand.style.MozTransform ='rotate('+deg+'deg)';
 		
 		divBox.style.left = (-n*bannerWidth) + 'px';
 		currentSlide=n;
+		
 	};
 	nextSlide = function (){
 		go2slide(currentSlide+1)
@@ -29,39 +34,18 @@ window.onload=function(){
 	};
 
 	for(var i=0;i<picsLen;i++){
-	(function(j){
-		var hand = document.getElementsByClassName('hand').item(0);
-		liBtns.item(j).onclick=function(){
-			switch(j)
-			{
-			case 1:
-			deg=45 ;
-			break;
-			case 2:
-			deg=90;
-			break;
-			case 3:
-			deg=135 ;
-			break;
-			case 5:
-			deg=135+45;
-			break;
-			case 6:
-			deg=135+90 ;
-			break;
-			case 7:
-			deg=135+135;
-			break;
-			default:
-			deg=135+135+45;
+		(function(j){
+			//var hand = document.getElementsByClassName('hand').item(0);
+			liBtns.item(j).onclick=function(){
+				//deg =j*45;
+				go2slide(j);
+				//hand.style.webkitTransform = 'rotate('+deg+'deg)';		//chrome
+				//hand.style.MozTransform ='rotate('+deg+'deg)';
 			}
-			go2slide(j);
-			hand.style.webkitTransform = 'rotate('+deg+'deg)'; //chrome
-			hand.style.MozTransform ='rotate('+deg+'deg)'; //Firefox
-			}
-			})(i);
-	}			
+		})(i);
+	}
 		
+	
 	var on= document.getElementsByClassName('on').item(0);
 	var divGlass=document.getElementsByClassName('glass').item(0);
 	var divPointer=document.getElementsByClassName('pointer').item(0);
