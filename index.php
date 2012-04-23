@@ -49,6 +49,7 @@
 		<div class="tv">
             <div class="hand"></div>
 			<ul class="btn">
+                <!--
                 <li class="yek">1</li>
                 <li class="do">2</li>
                 <li class="se">3</li>
@@ -57,6 +58,8 @@
                 <li class="shish">6</li>
                 <li class="haft">7</li>
                 <li class="hasht">8</li>
+                
+                -->
         	<?php
 				for($i=0;$i<$pics_len;$i++) echo '<li></li>';
 			?>
@@ -68,7 +71,6 @@
             	<a class="on">On</a>
                 <div class="pointer"></div>
 			</div>
-				 <!-- <div class="pass"></div> -->
             <div class="pannel">
 				<div class="next"  onclick="nextSlide()"><p>Next/Pause</p><a id="next"></a></div>
                 <div class="back"  onclick="prvSlide()"><p>Back/Pause</p><a id="back"></a></div>
@@ -77,9 +79,7 @@
 			</div>
         </div>
         <div class="tvtable">
-            <div class="footer">
-            <p>Created by <a href="http://www.naserr.ir">Naser Rahmani  </a><img class="b" src="img/anti-copyright.png" width="70" height="70" /></p>
-            </div>
+        	<div class="fly"></div>
         </div>
 </div>
 </body>

@@ -6,13 +6,13 @@
 }
 
 body{
-	background-image:url(img/wall3.jpg);
+	background-image:url(img/wall4.jpg);
 }
 
 
 #loading{
 	display:block;
-	background-image:url(img/wall3.jpg);
+	background-image:url(img/wall4.jpg);
 	width:100%;
 	height:200%;
 	top:0;
@@ -75,38 +75,41 @@ body{
 																		/* */
 div.container{
 	margin:0 auto;
-	width:1000px;
+	width:980px;
+	min-height:900px;
 	
 }
 div.under{
 	background-image:url(img/barfak.png);
 	background-repeat:no-repeat;
-	width:608px;
+	width:550px;
 	height:425px;
 	position:absolute;
-	margin:100px 0px 0px 110px;;
+	z-index:-2;
+	margin-left:160px;
 }
-
+							/*   BANNER is the window that show itself under picures  */
 div.banner{
-	width:800px;
-	height:600px;
+	width:565px;
+	height:400px;
 	overflow:hidden;
-	margin-top:20px;
-	margin-left:50px;
+	margin-top:100px;
+	margin-left:120px;
 	position:relative;
 
 	
 }
+										/* Box has the pictures in it self*/
 div.banner div.box{
-	height:418px;
+	width:530px;
+	height:350px;
 	position:absolute;
-	margin-left:64px;
-	top:99px;
 	-webkit-transition:all 800ms;
 	-moz-transition:all 800ms;
+	margin:30px 0px 0px 57px;
 }
 div.banner div.box > div{
-	width:600px;
+	width:525px;
 	height:inherit;
 	float:left;					
 	background-repeat:no-repeat;
@@ -137,14 +140,13 @@ div.banner div.box > div.six{
 	background-image:url(img/banner/six.JPG);
 }
 
-/*  TV */
+																				/*  TV */
 div.container div.tv{
-	background-image:url(img/tv_turnon.png);
+	background-image:url(img/tv_turnon1.png);
 	background-repeat:no-repeat;
-	width:inherit;
-	height:900px;
+	min-height:900px;
 	position:absolute;
-	margin-top:-785px;
+	margin-top:-685px;
 }
 
 																		/* HAND */
@@ -152,7 +154,7 @@ div.container div.tv{
 div.tv div.hand{
 	background-image:url(img/handok.png);
 	background-repeat:no-repeat;
-	margin:370px 0px 0px 808px;
+	margin:383px 0px 0px 755px;
 	width:130px;
 	height:130px;
 	position:absolute;
@@ -222,7 +224,7 @@ div.pannel{
 	width:180px;
 	min-height:60px;
 	margin-top:495px;
-	margin-left:785px;
+	margin-left:728px;
 }
 div.tv div.pannel #next{
 	background-image:url(img/asab.png);
@@ -245,10 +247,9 @@ div.tv div.pannel div.next p{
 	opacity:0.4;
 	-webkit-opacity:0.4;
 	margin-top:60px;
-	margin-left:112px;
+	margin-left:104px;
 	color:gray;
-	font-family:"Birch Std";
-	font-size:22px;
+	font-size:14px;
 	position:absolute;
 }
 div.tv div.pannel #back{
@@ -271,10 +272,9 @@ div.tv div.pannel div.back p{
 	opacity:0.4;
 	-webkit-opacity:0.4;
 	margin-top:60px;
-	margin-left:40px;
+	margin-left:33px;
 	color:gray;
-	font-size:22px;
-	font-family:"Birch Std";
+	font-size:14px;
 	position:absolute;
 }
 div.tv div.pannel #play{
@@ -299,42 +299,40 @@ div.tv div.mainpower{
 	background-repeat:no-repeat;
 	width:150px;
 	height:150px;
-	margin:210px 0px 0px 797px;
+	margin:240px 0px 0px 745px;
 	position:inherit;
 }
 div.mainpower a.off{
 	cursor:pointer;
-	font-family:"Birch Std";
-	color:rgb(150,10,10);
+	color:#999;
 	font-size:20px;
 	position:inherit;
-	margin:42px 0px 0px 72px;
+	margin:42px 0px 0px 62px;
 	text-decoration:none;
 }
 div.mainpower a.off:hover{
 	cursor:pointer;
-	color:rgb(250,10,10);
+	color:#F00;
 	font-size:20px;
 	position:inherit;
-	margin:42px 0px 0px 72px;
+	margin:42px 0px 0px 62px;
 	text-decoration:none;
 }
 
 div.mainpower a.on{
-	font-family:"Birch Std";
 	cursor:pointer;
-	color:rgb(10,150,10);
+	color:#999;
 	font-size:20px;
 	position:inherit;
-	margin:65px 0px 0px 98px;
+	margin:65px 0px 0px 91px;
 	text-decoration:none;
 }
 div.mainpower a.on:hover{
 	cursor:pointer;
-	color:rgb(10,250,10);
+	color:#0F0;
 	font-size:20px;
 	position:inherit;
-	margin:65px 0px 0px 98px;
+	margin:65px 0px 0px 91px;
 	text-decoration:none;
 }
 
@@ -353,59 +351,100 @@ div.tv div.mainpower div.pointer{
 div.tv div.glass{
 	background-image:url(img/glass.png);
 	background-repeat:no-repeat;
-	width:608px;
-	height:425px;
-	margin:280px 0px 0px 115px;
+	width:517px;
+	height:361px;
+	margin:310px 0px 0px 175px;
 	position:absolute;
+	z-index:4;
+	
 }
 div.box div.otext{
 	background-image:url(img/bgtxt.png);
 	background-repeat:no-repeat;
 	width:400px;
-	height:68px;
+	min-height:68px;
 	position:absolute;
-	margin:7px 0px 0px 109px;
-	padding:10px 0px 0px 0px;
+	margin:12px 0px 0px 60px;
+	padding:5px 0px 0px 0px;
 	text-align:center;
 	color:lightblue;
 	font-family:"Comic Sans MS", cursive;
 	font-size:14px;
 	font-weight:bold;
-	opacity:0.8;
-	-webkit-opacity:0.8;
+	opacity:0.2;
+	-webkit-opacity:0.2;
+	z-index:3;
+}
+div.box div.otext:hover{
+	cursor:pointer;
+	background-image:url(img/bgtxt.png);
+	background-repeat:no-repeat;
+	width:400px;
+	min-height:68px;
+	position:absolute;
+	margin:12px 0px 0px 60px;
+	padding:5px 0px 0px 0px;
+	text-align:center;
+	color:white;
+	font-family:"Comic Sans MS", cursive;
+	font-size:14px;
+	font-weight:bold;
+	opacity:1;
+	-webkit-opacity:1;
+	z-index:3;
 }
 div.tvtable{
-	background-image:url(img/oldtable.png);
+	background-image:url(img/wood-table1.png);
 	background-repeat:no-repeat;
-	width:1100px;
-	min-height:300px;
+	margin-top:50px ;
+	height:510px;
+	width:1020px;
+	
 }
 div.footer{
-	font:"Birch Std";
+	font-family:"Comic Sans MS", cursive;
 	position:absolute;
-	width:400px;
-	margin:220px 0px 0px 400px;
+	width:210px;
+	margin:215px 0px 0px 350px;
 	font-size:14px;
+	background-color:#667;
+	opacity:0.8;
+	-webkit-opacity:0.8;
+	-webkit-border-radius:20px;
+	text-align:center;
+	
 
 }
 div.footer img.b{
 	margin-top:-30px;
+	margin-left:10px;
 	position:absolute;
 	opacity:0.3;
 	-webkit-opacity:0.3;
 }
 
 div.footer p{
-	font:"Birch Std";
 	font-size:16px;
 	text-decoration:none;
-	font-style:italic;
 
 }
 div.footer a{
-	font:"Birch Std";
 	font-size:16px;
 	text-decoration:none;
 	color:#000033;
-	font-style:italic;
+}
+
+div.tvtable div.fly{
+	position:absolute;
+	left:40%;
+	top:45%;
+	padding:10px 12px;
+	cursor:url(img/cur.gif),url(img/cur2.cur),auto;
+	white-space:nowrap;
+	background-image:url(img/fly2.png);
+	width:60px;
+	height:80px;
+	background-repeat:no-repeat;
+	-webkit-transition:all 900ms;
+	z-index:6;
 }

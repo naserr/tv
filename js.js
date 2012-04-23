@@ -1,6 +1,13 @@
-var bannerWidth = 598,
+var bannerWidth = 525,
 currentSlide = 0,
 divBox, liBtns, picsLen, go2slide, nextSlide, prvSlide;
+
+
+var cheat = 0;
+function rnd(a,b){
+	return Math.floor( Math.random()*(b-a+1) ) +a;
+}
+
 
 window.onload=function(){
 	
@@ -66,6 +73,8 @@ window.onload=function(){
 		//divPointer.style.OTransform ='rotate(0deg)';		//OPERA
 		//divPointer.style.msTransform = 'rotate(0deg)';​		//Cursed Microsoft IE ! :D
 		divGlass.style.display='block';
+				clearInterval(t);
+				t = 0;
 	}
 
 																				/*  PALY SLIDESHOW  */	
@@ -85,6 +94,13 @@ window.onload=function(){
 	t = setInterval(nextSlide, 4000);
 	}
 	
-	// var  hand = document.getElementsByClassName('hand');              // ROTATE HAND?????
-	// hand.style.style.webkitTransform = 'rotate(45deg)';		
+	
+	var divFly= document.getElementsByClassName('fly').item(0);
+	divFly.onmouseover=function(){
+		divFly.style.left=rnd(5,95)+'%';
+		divFly.style.top=rnd(5,95)+'%';
+		}
+
 }
+
+
