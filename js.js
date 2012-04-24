@@ -25,7 +25,7 @@ window.onload=function(){
 		var hand = document.getElementsByClassName('hand').item(0);
 		if(n>=picsLen) n=0;
 		if(n<0) n=picsLen-1;
-		deg =n*45;
+		deg =n*32.7;
 				hand.style.webkitTransform = 'rotate('+deg+'deg)';		//chrome
 				hand.style.MozTransform ='rotate('+deg+'deg)';
 		
