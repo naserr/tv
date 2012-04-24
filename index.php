@@ -79,7 +79,7 @@
 			</div>
         </div>
         <div class="tvtable">
-        	<div class="fly"></div>
+        	<a class="fly" value="Open window" onclick="divFly"></a>
         </div>
 </div>
 </body>

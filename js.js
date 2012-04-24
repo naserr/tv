@@ -42,12 +42,8 @@ window.onload=function(){
 
 	for(var i=0;i<picsLen;i++){
 		(function(j){
-			//var hand = document.getElementsByClassName('hand').item(0);
 			liBtns.item(j).onclick=function(){
-				//deg =j*45;
 				go2slide(j);
-				//hand.style.webkitTransform = 'rotate('+deg+'deg)';		//chrome
-				//hand.style.MozTransform ='rotate('+deg+'deg)';
 			}
 		})(i);
 	}
@@ -100,6 +96,12 @@ window.onload=function(){
 		divFly.style.left=rnd(5,95)+'%';
 		divFly.style.top=rnd(5,95)+'%';
 		}
+			divFly.onclick=function(){
+				divFly.style.backgroundImage="url(img/flyshoot.png)";
+				divFly = null;
+				divFly=window.open('http://www.naserr.ir','','');
+			}
+
 
 }
 

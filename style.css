@@ -239,7 +239,7 @@ div.tv div.pannel #next{
 	cursor:pointer;
 }
 div.pannel #next:active{
-	background-image:url(pannel_btn.png);
+	background-image:url(img/asab.png);
     background-position:bottom right;
 }
 
@@ -265,7 +265,7 @@ div.tv div.pannel #back{
 	cursor:pointer;
 }
 div.pannel #back:active{
-	background-image:url(pannel_btn.png);
+	background-image:url(img/asab.png);
     background-position:bottom right;
 }
 div.tv div.pannel div.back p{
@@ -290,7 +290,7 @@ div.tv div.pannel #play{
 	cursor:pointer;
 }
 div.pannel #play:active{
-	background-image:url(pannel_btn.png);
+	background-image:url(img/play.png);
     background-position:bottom right;
 }
 																		/*    POWER BTN OOF/ON   */
@@ -434,7 +434,7 @@ div.footer a{
 	color:#000033;
 }
 
-div.tvtable div.fly{
+div.tvtable a.fly{
 	position:absolute;
 	left:40%;
 	top:45%;
@@ -447,4 +447,7 @@ div.tvtable div.fly{
 	background-repeat:no-repeat;
 	-webkit-transition:all 900ms;
 	z-index:6;
+}
+div.tvtable a.fly:active{
+	opacity:0.1;
 }
