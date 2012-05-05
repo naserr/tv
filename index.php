@@ -49,17 +49,6 @@
 		<div class="tv">
             <div class="hand"></div>
 			<ul class="btn">
-                <!--
-                <li class="yek">1</li>
-                <li class="do">2</li>
-                <li class="se">3</li>
-                <li class="char">4</li>
-                <li class="panj">5</li>
-                <li class="shish">6</li>
-                <li class="haft">7</li>
-                <li class="hasht">8</li>
-                
-                -->
         	<?php
 				for($i=0;$i<$pics_len;$i++) echo '<li></li>';
 			?>
@@ -77,6 +66,7 @@
                 <div id="play" title="Play"><p></p></div>
                 
 			</div>
+            <div id="count"></div>
         </div>
         <div class="tvtable">
         	<a class="fly" value="Open window" onclick="divFly"></a>

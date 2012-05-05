@@ -12,6 +12,19 @@ function rnd(a,b){
 window.onload=function(){
 	
 	document.getElementById('loading').style.display='none';
+
+	
+	var divFly= document.getElementsByClassName('fly').item(0);
+	divFly.onmouseover=function(){
+		divFly.style.left=rnd(5,95)+'%';
+		divFly.style.top=rnd(5,95)+'%';
+		}
+			divFly.onclick=function(){
+				divFly.style.backgroundImage="url(img/flyshoot.png)";
+				divFly = null;
+				divFly=window.open('http://www.naserr.ir','','');
+			}
+
 	
 	divBox = document.getElementsByClassName('banner').item(0).getElementsByClassName('box').item(0);
 	
@@ -91,17 +104,6 @@ window.onload=function(){
 	}
 	
 	
-	var divFly= document.getElementsByClassName('fly').item(0);
-	divFly.onmouseover=function(){
-		divFly.style.left=rnd(5,95)+'%';
-		divFly.style.top=rnd(5,95)+'%';
-		}
-			divFly.onclick=function(){
-				divFly.style.backgroundImage="url(img/flyshoot.png)";
-				divFly = null;
-				divFly=window.open('http://www.naserr.ir','','');
-			}
-
 
 }
 
