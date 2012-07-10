@@ -6,4 +6,4 @@
 
 With especial thanks from **[mahbube](http://github.com/mahbube)** and **[aligh](http://github.com/aligh)** that help me in coding this project. 
 
-Help me with your new idea...thank you!
+Help me with your new idea....thank you!
